@@ -162,7 +162,7 @@ ul li a {
     }
 
     .search_box {
-        width: 70%;
+        width: 100%;
         height: 50px;
     }
 }
@@ -243,3 +243,135 @@ ul li a {
 }
 
 /* Legal Practice Area Completed */
+
+.contacts_align {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.info_align {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    flex-basis: 50%;
+}
+
+.input_align_contacts {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    gap: 30px;
+}
+
+.contact_title {
+    color: rgb(65, 64, 64);
+
+    text-align: center;
+
+    font-size: 40px;
+
+    font-weight: 800;
+}
+
+.contact_description {
+    font-size: 16px;
+    color: gray;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 15rem;
+    margin-top: 25px;
+    margin-bottom: 60px;
+}
+
+.info_div {
+    padding: 20%;
+    border: 1px solid transparent;
+    background-color: rgb(243, 243, 243);
+
+}
+
+.info_div:hover {
+    border: 1px solid rgb(0 0 0 / 0.1);
+    box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+#info_div_1 {
+    border-bottom: 1px solid rgb(0 0 0 / 0.1);
+    border-right: 1px solid rgb(0 0 0 / 0.1);
+}
+
+#info_div_2 {
+    border-bottom: 1px solid rgb(0 0 0 / 0.1);
+}
+
+#info_div_3 {
+    border-right: 1px solid rgb(0 0 0 / 0.1);
+}
+
+
+
+.info_title {
+    font-size: 32px;
+}
+
+.info_description {
+    font-size: 15px;
+    overflow-wrap: anywhere;
+    margin: 1rem 0;
+}
+
+.input_design {
+    height: 61px;
+    border-radius: 8px;
+    background: rgb(243, 243, 243);
+    border: none;
+    padding-left: 1rem;
+}
+
+.textarea_design {
+    resize: none;
+    border-radius: 8px;
+    background: rgb(243, 243, 243);
+    border: none;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.input_btn_design {
+    border-radius: 8px;
+    background: rgb(182, 140, 90);
+    padding: 20px 2rem;
+    color: rgb(255, 255, 255);
+
+    border: 2px solid rgb(182, 140, 90);
+
+    font-size: 20px;
+
+    font-weight: 600;
+}
+
+@media only screen and (max-width:768px) {
+    .contact_description {
+        margin: 0;
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .contacts_align {
+        flex-direction: column-reverse;
+    }
+
+    .info_align {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .info_div {
+        box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    }
+
+}
+
+
+/* Contact With us completed */
