@@ -33,11 +33,11 @@ body {
     display: none;
 }
 
-ul li {
+body ul li {
     list-style: none;
 }
 
-ul li a {
+body ul li a {
     text-decoration: none;
     color: gray;
 }
@@ -351,6 +351,10 @@ ul li a {
     font-weight: 600;
 }
 
+.footer_margin_set {
+    margin-bottom: 100px;
+}
+
 @media only screen and (max-width:768px) {
     .contact_description {
         margin: 0;
@@ -364,14 +368,103 @@ ul li a {
 
     .info_align {
         grid-template-columns: repeat(1, 1fr);
-        gap: 30px;
+        gap: 10px;
     }
 
     .info_div {
         box-shadow: 0 -4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     }
 
+    .input_align_contacts {
+        gap: 10px;
+    }
+
 }
 
 
 /* Contact With us completed */
+footer {
+    background-color: black;
+    padding: 40px 60px;
+
+
+}
+
+.footer {
+    max-width: 1500px;
+    margin: 0 auto;
+    margin: 4rem 11rem;
+}
+
+.footer_align {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo_side {
+    flex-basis: 25%
+}
+
+.useful_link_side {
+    flex-basis: 25%
+}
+
+.contact_us_side {
+    flex-basis: 25%
+}
+
+.Subscribe_side {
+    flex-basis: 25%
+}
+
+.footer_links {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.subscribe_description,
+.contact_us_description,
+.logo_description {
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.subscribe_title,
+.contact_us_title,
+.useful_link_title {
+    font-size: 20px;
+}
+
+.useful_link_title {
+    margin-bottom: 20px;
+}
+
+.footer_input_align {
+    display: flex;
+}
+
+.footer_input {
+    border: none;
+    border-radius: 5px;
+    padding-left: 1rem;
+}
+
+.contact_us_description {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:768px) {
+    .footer {
+        margin: 0;
+    }
+
+    .footer_align {
+        flex-direction: column;
+    }
+}
