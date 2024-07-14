@@ -68,10 +68,17 @@ ul li a {
         display: none;
     }
 
+    .responsive_options_div {
+
+        text-align: center;
+    }
+
     .responsive_options_align {
         display: flex;
+        flex-direction: column;
         padding: 0;
         gap: 25px;
+
         margin-top: 30px;
     }
 
